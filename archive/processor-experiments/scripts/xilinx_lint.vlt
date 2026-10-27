@@ -1,0 +1,5 @@
+`verilator_config
+// Исключения только для сторонней поведенческой модели DSP из Yosys.
+lint_off -rule WIDTHEXPAND -file "*/share/yosys/xilinx/cells_sim.v"
+lint_off -rule WIDTHTRUNC -file "*/share/yosys/xilinx/cells_sim.v"
+lint_off -rule COMBDLY -file "*/share/yosys/xilinx/cells_sim.v"

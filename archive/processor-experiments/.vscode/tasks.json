@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FPGA: проверить среду",
+      "type": "shell",
+      "command": "make doctor",
+      "group": "test"
+    },
+    {
+      "label": "FPGA: проверить связь",
+      "type": "shell",
+      "command": "make probe",
+      "group": "test"
+    },
+    {
+      "label": "FPGA: проверить RTL",
+      "type": "shell",
+      "command": "make lint",
+      "group": "test"
+    },
+    {
+      "label": "FPGA: моделировать",
+      "type": "shell",
+      "command": "make sim",
+      "group": "test"
+    },
+    {
+      "label": "FPGA: собрать",
+      "type": "shell",
+      "command": "make synth",
+      "group": "build"
+    },
+    {
+      "label": "FPGA: собрать проверенный образ",
+      "type": "shell",
+      "command": "make bitstream",
+      "group": "build"
+    }
+  ]
+}
